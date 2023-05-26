@@ -26,6 +26,7 @@ namespace iShopping.SchemaBuilder
             });
 
             var dbContext = new AppDbContext(optionsBuilder.Options);
+            
             return dbContext;
         }
     }

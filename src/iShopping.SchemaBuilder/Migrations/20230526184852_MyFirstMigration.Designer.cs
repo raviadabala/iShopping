@@ -11,7 +11,7 @@ using iShopping.Entities;
 namespace iShopping.SchemaBuilder.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230526165936_MyFirstMigration")]
+    [Migration("20230526184852_MyFirstMigration")]
     partial class MyFirstMigration
     {
         /// <inheritdoc />
@@ -131,6 +131,22 @@ namespace iShopping.SchemaBuilder.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcurrencyStamp = "1",
+                            Name = "Admin",
+                            NormalizedName = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ConcurrencyStamp = "2",
+                            Name = "HR",
+                            NormalizedName = "Human Resource"
+                        });
                 });
 
             modelBuilder.Entity("iShopping.Entities.User", b =>
@@ -196,6 +212,21 @@ namespace iShopping.SchemaBuilder.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "58fd44b1-dd8d-4673-8990-cdce680153fd",
+                            Email = "admin@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PhoneNumber = "1234567890",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("iShopping.Entities.UserRole", b =>
