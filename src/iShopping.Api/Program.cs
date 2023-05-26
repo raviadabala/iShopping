@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMinimalApiDefinition(builder.Configuration, typeof(AccountEndpoint));
+builder.Services.AddIdentityServices();
 
 var app = builder.Build();
 
