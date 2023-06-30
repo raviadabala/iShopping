@@ -14,6 +14,7 @@ public class SeedData
         {
             var adminUser = new User
             {
+                KnownAs = "Admin",
                 UserName = "admin",
                 Email = "admin@example.com"
                 // Set any additional properties for the user

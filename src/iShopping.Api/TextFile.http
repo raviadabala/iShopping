@@ -1,0 +1,27 @@
+﻿### Registration
+POST https://localhost:7130/api/v1/account/register
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userName": "radabala6",
+  "password": "Rav!6500",
+  "knownAs": "Ravi",
+  "email": "ravikumar.adabala6@gmail.com",
+  "phoneNumber": "99855445152"
+}
+### Login
+# @name loginRequest
+POST https://localhost:7130/api/v1/account/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userName": "radabala",
+  "password": "Rav!6500"
+}
+
+### Get Users
+GET https://localhost:7130/api/v1/account
+Authorization: Bearer {{loginRequest.response.body.token}}
+Accept: application/json

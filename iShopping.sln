@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iShopping.Entities", "src\i
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iShopping.SchemaBuilder", "src\iShopping.SchemaBuilder\iShopping.SchemaBuilder.csproj", "{0B585714-2E54-4BE7-A92B-A4B53BA07D42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iShopping.Dto", "src\iShopping.Dto\iShopping.Dto.csproj", "{11439FC2-1FF6-4775-9A51-B99092E547F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{0B585714-2E54-4BE7-A92B-A4B53BA07D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B585714-2E54-4BE7-A92B-A4B53BA07D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B585714-2E54-4BE7-A92B-A4B53BA07D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11439FC2-1FF6-4775-9A51-B99092E547F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11439FC2-1FF6-4775-9A51-B99092E547F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11439FC2-1FF6-4775-9A51-B99092E547F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11439FC2-1FF6-4775-9A51-B99092E547F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

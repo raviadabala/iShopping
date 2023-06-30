@@ -18,7 +18,7 @@ namespace iShopping.Api.Extensions
                 .AddRoles<Role>()
                 .AddRoleManager<RoleManager<Role>>()
                 .AddSignInManager<SignInManager<User>>()
-                .AddRoleValidator<RoleValidator<User>>()
+                .AddRoleValidator<RoleValidator<Role>>()
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders()
                 ;

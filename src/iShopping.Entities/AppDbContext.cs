@@ -29,7 +29,8 @@ namespace iShopping.Entities
                 UserName = "Admin",
                 Email = "admin@gmail.com",
                 LockoutEnabled = false,
-                PhoneNumber = "1234567890"
+                PhoneNumber = "1234567890",
+                KnownAs = "Admin"
             };
 
             builder.Entity<User>().HasData(user);

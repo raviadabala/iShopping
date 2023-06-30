@@ -11,6 +11,7 @@ namespace iShopping.Entities;
 
 public class User : IdentityUser<int>
 {
+    public string KnownAs { get; set; } = default!;
     public ICollection<UserRole> UserRoles { get; set; } = default!;
 }
 
